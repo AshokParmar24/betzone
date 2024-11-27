@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import betzone_full_logo from "./assets/betzon_full_logo.png";
+import React from "react";
+import AppRouter from "./routes/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col h-[100vh]">
+      <img src={betzone_full_logo} alt="betzone" className="w-full p-0 m-0" />
+      <AppRouter />
     </div>
   );
 }
